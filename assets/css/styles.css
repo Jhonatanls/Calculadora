@@ -1,0 +1,40 @@
+html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    background-color: #040404;
+    border-radius: 10px;
+}
+
+.bg-gray{
+    background-color: #7c7c7c;
+    color: #040404;
+    border-radius: 50%;
+}
+
+.bg-orange{
+    background-color: #f99d0e;
+    color: white;
+    border-radius: 50%;
+}
+
+.bg-black{
+    background-color: #3c3c3c;
+    color: white;
+    border-radius: 50%;
+}
+
+button {
+    height: 80px;
+    width: 80px;
+}
+
+.row .col-6 .btn {
+    height: 80px;
+    width: 50px;
+}
+
