@@ -10,73 +10,76 @@
 <body>
     <div class="content py-5">
         <div class="screen-numbers">
-
+            <h1 id="numeros-pantalla"></h1>
         </div>
         <div class="buttons mt-4">
             <div class="row">
                 <div class="col-3">
-                    <button class="btn bg-gray btn-lg rounded-circle" id="button-borrartodo">AC</button>
+                    <button class="boton bg-gray" onclick="limpiarPantalla()"><b>AC</b></button>
                 </div>
                 <div class="col-3">
-                    <button class="btn bg-gray btn-lg rounded-circle" id="button-masmenos">+/-</button>
-                </div>
-                
-                <div class="col-3">
-                    <button class="btn bg-gray btn-lg rounded-circle" id="button-porcentaje">%</button>
+                    <button class="boton bg-gray" id="button-masmenos"><b>+/-</b></button>
                 </div>
                 
                 <div class="col-3">
-                    <button class="btn bg-orange btn-lg rounded-circle" id="button-division">/</button>
+                    <button class="boton bg-gray " id="button-porcentaje"><b>%</b></button>
+                </div>
+                
+                <div class="col-3">
+                    <button class="boton bg-orange" onclick="inputValue('/')" id="button-division"><b>÷</b></button>
                 </div>
             </div>
             <div class="row">
                 <div class="col-3">
-                    <button class="btn bg-black btn-lg rounded-circle" id="button-siete">7</button>
+                    <button class="boton bg-blacky" onclick="inputValue('7')">7</button>
                 </div>
                 <div class="col-3">        
-                    <button class="btn bg-black btn-lg rounded-circle" id="button-ocho">8</button>
+                    <button class="boton bg-blacky" onclick="inputValue('8')">8</button>
                 </div>
                 <div class="col-3">
-                    <button class="btn bg-black btn-lg rounded-circle" id="button-nueve">9</button>
+                    <button class="boton bg-blacky" onclick="inputValue('9')">9</button>
                 </div>
                 <div class="col-3">
-                    <button class="btn bg-orange btn-lg rounded-circle" id="button-multplicacion">x</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3">
-                    <button class="btn bg-black btn-lg rounded-circle" id="button-cuatro">4</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn bg-black btn-lg rounded-circle" id="button-cinco">5</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn bg-black btn-lg rounded-circle" id="button-seid">6</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn bg-orange btn-lg rounded-circle" id="button-resta">-</button>
+                    <button class="boton bg-orange" onclick="inputValue('*')"><b>x</b></button>
                 </div>
             </div>
             <div class="row">
                 <div class="col-3">
-                    <button class="btn bg-black btn-lg rounded-circle" id="button-uni">1</button>
+                    <button class="boton bg-blacky" onclick="inputValue('4')">4</button>
                 </div>
                 <div class="col-3">
-                    <button class="btn bg-black btn-lg rounded-circle" id="button-dos">2</button>
+                    <button class="boton bg-blacky" onclick="inputValue('5')">5</button>
                 </div>
                 <div class="col-3">
-                    <button class="btn bg-black btn-lg rounded-circle" id="button-tres">3</button>
+                    <button class="boton bg-blacky" onclick="inputValue('6')">6</button>
                 </div>
                 <div class="col-3">
-                    <button class="btn bg-orange btn-lg rounded-circle" id="button-suma">+</button>
+                    <button class="boton bg-orange" onclick="inputValue('-')"><b>-</b></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <button class="boton bg-blacky" onclick="inputValue('1')">1</button>
+                </div>
+                <div class="col-3">
+                    <button class="boton bg-blacky" onclick="inputValue('2')">2</button>
+                </div>
+                <div class="col-3">
+                    <button class="boton bg-blacky" onclick="inputValue('3')">3</button>
+                </div>
+                <div class="col-3">
+                    <button class="boton bg-orange" onclick="inputValue('+')"><b>+</b></button>
                 </div>
             </div>
             <div class="row">              
                 <div class="col-6">
-                    <button class="btn bg-black btn-lg rounded-circle" id="button-cero">0</button>
+                    <button class="boton-cero btn-lg bg-blacky" onclick="inputValue('0')">0</button>
                 </div>
-                <div class="col-6">
-                    <button class="btn bg-orange btn-lg rounded-circle" id="button-igual">=</button>
+                <div class="col-3">
+                    <button class="boton bg-blacky" onclick="inputValue(',')",</button>
+                </div>
+                <div class="col-3">
+                    <button class="boton bg-orange" onclick="calcular()"><b>=</b></button>
                 </div>
             </div>
         </div>
@@ -85,7 +88,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <script src="./assets/js/app.js"></script>
     
 </body>
 </html>
