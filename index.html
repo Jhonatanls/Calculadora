@@ -22,53 +22,53 @@
                 </div>
                 
                 <div class="col-3">
-                    <button class="boton bg-gray " id="button-porcentaje"><b>%</b></button>
+                    <button class="boton bg-gray " onclick="inputValue('%')"><b>%</b></button>
                 </div>
                 
                 <div class="col-3">
-                    <button class="boton bg-orange" onclick="inputValue('/')" id="button-division"><b>÷</b></button>
+                    <button class="boton-op bg-orange" onclick="inputValue('/')">÷</button>
                 </div>
             </div>
             <div class="row">
                 <div class="col-3">
-                    <button class="boton bg-blacky" onclick="inputValue('7')">7</button>
+                    <button class="boton bg-blacky" onclick="inputValue(7)">7</button>
                 </div>
                 <div class="col-3">        
-                    <button class="boton bg-blacky" onclick="inputValue('8')">8</button>
+                    <button class="boton bg-blacky" onclick="inputValue(8)">8</button>
                 </div>
                 <div class="col-3">
-                    <button class="boton bg-blacky" onclick="inputValue('9')">9</button>
+                    <button class="boton bg-blacky" onclick="inputValue(9)">9</button>
                 </div>
                 <div class="col-3">
-                    <button class="boton bg-orange" onclick="inputValue('*')"><b>x</b></button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3">
-                    <button class="boton bg-blacky" onclick="inputValue('4')">4</button>
-                </div>
-                <div class="col-3">
-                    <button class="boton bg-blacky" onclick="inputValue('5')">5</button>
-                </div>
-                <div class="col-3">
-                    <button class="boton bg-blacky" onclick="inputValue('6')">6</button>
-                </div>
-                <div class="col-3">
-                    <button class="boton bg-orange" onclick="inputValue('-')"><b>-</b></button>
+                    <button class="boton-op bg-orange" onclick="inputValue('*')">x</button>
                 </div>
             </div>
             <div class="row">
                 <div class="col-3">
-                    <button class="boton bg-blacky" onclick="inputValue('1')">1</button>
+                    <button class="boton bg-blacky" onclick="inputValue(4)">4</button>
                 </div>
                 <div class="col-3">
-                    <button class="boton bg-blacky" onclick="inputValue('2')">2</button>
+                    <button class="boton bg-blacky" onclick="inputValue(5)">5</button>
                 </div>
                 <div class="col-3">
-                    <button class="boton bg-blacky" onclick="inputValue('3')">3</button>
+                    <button class="boton bg-blacky" onclick="inputValue(6)">6</button>
                 </div>
                 <div class="col-3">
-                    <button class="boton bg-orange" onclick="inputValue('+')"><b>+</b></button>
+                    <button class="boton-op bg-orange" onclick="inputValue('-')">-</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <button class="boton bg-blacky" onclick="inputValue(1)">1</button>
+                </div>
+                <div class="col-3">
+                    <button class="boton bg-blacky" onclick="inputValue(2)">2</button>
+                </div>
+                <div class="col-3">
+                    <button class="boton bg-blacky" onclick="inputValue(3)">3</button>
+                </div>
+                <div class="col-3">
+                    <button class="boton-op bg-orange" onclick="inputValue('+')">+</button>
                 </div>
             </div>
             <div class="row">              
@@ -76,7 +76,7 @@
                     <button class="boton-cero btn-lg bg-blacky" onclick="inputValue('0')">0</button>
                 </div>
                 <div class="col-3">
-                    <button class="boton bg-blacky" onclick="inputValue(',')",</button>
+                    <button class="boton bg-blacky" onclick="inputValue(',')">,</button>
                 </div>
                 <div class="col-3">
                     <button class="boton bg-orange" onclick="calcular()"><b>=</b></button>

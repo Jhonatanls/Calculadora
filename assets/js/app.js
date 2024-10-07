@@ -1,13 +1,20 @@
-let currentInput = "";
-const divPantalla = document.querySelector('#numeros-pantalla');
+let currentInput = 0;
+const divPantalla = document.querySelector('#numeros-pantalla'),
+      operations = ['+', '-', '*', '/'];
 
 const inputValue = (value) => {
-    currentInput += value;
-    divPantalla.innerText = currentInput;
+    if(Number.isInteger(value) && currentInput === 0){
+        currentInput += value;
+        divPantalla.innerText = currentInput;
+
+    } else if (operations.includes(value)){
+        currentInput += value;
+        animarBoton(event.target);
+    }
 }
 
 const limpiarPantalla = () => {
-    currentInput = "";
+    currentInput = 0;
     divPantalla.innerText = '0';
 }
 
@@ -18,5 +25,9 @@ const calcular = () => {
     } catch (error) {
         divPantalla.innerText = "Error";
     }
+}
+
+const animarBoton = (button) => {
+    button.classList.add('operation');
 }
           

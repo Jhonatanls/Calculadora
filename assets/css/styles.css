@@ -12,23 +12,24 @@ html, body {
     src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-Light.ttf");
 }
 
-#numeros-pantalla{
-    font-family: "SF Pro Text";
-    font-size: 60px;
-    color: white;
-    text-align: end;
-    padding-right: 15px;
-}
-
 .content{
     background-color: #000000;
-    background-image: url("/assets/img/Teclado-calculadora.jpg");
+    background-image: no-repeat url("https://i.sstatic.net/vhoa0.jpg");
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 480px;
+    width: 310px;
+}
+
+#numeros-pantalla{
+    font-family: "SF Pro Text";
+    font-size: 60px;
+    color: white;
+    text-align: end;
+    padding-right: 15px;
 }
 
 .screen-numbers{
@@ -38,14 +39,12 @@ html, body {
     white-space: nowrap;
 }
 
-
 .buttons {
-    position: relative;
+    width: 100%;
+    height: 320px;
     border-radius: 10px;
     align-items: center;
-    height: 360px;
-    width: 300px;
-    padding: 10px 15px;
+    padding: 10px 10px;
 }
 
 .boton{
@@ -57,12 +56,23 @@ html, body {
     border-radius: 100%;
 }
 
+.boton-op{
+    font-family: "SF Pro Text";
+    font-size: 27px;
+    height: 60px;
+    width: 60px;
+    margin: 5px 1px;
+    border-radius: 100%;
+    font-weight: bold;
+}
+
 .boton-cero{
     font-family: "SF Pro Text";
     font-size: 27px;
-    height: 58px;
-    width: 135px;
+    height: 60px;
+    width: 145px;
     border-radius: 50px;
+    padding-left: 20px;
     text-align: left;
 }
 
@@ -79,4 +89,10 @@ html, body {
 .bg-blacky{
     background-color: #333333;
     color: white;
+}
+
+.operation{
+    background-color: white;
+    color: #ff9f0a;
+    font: bold;
 }
