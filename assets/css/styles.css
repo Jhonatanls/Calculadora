@@ -14,7 +14,6 @@ html, body {
 
 .content{
     background-color: #000000;
-    background-image: no-repeat url("https://i.sstatic.net/vhoa0.jpg");
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -29,7 +28,7 @@ html, body {
     font-size: 60px;
     color: white;
     text-align: end;
-    padding-right: 15px;
+    padding-right: 25px;
 }
 
 .screen-numbers{
@@ -48,32 +47,105 @@ html, body {
 }
 
 .boton{
+    border: none; 
+    box-shadow: none;
+    outline: none;
     font-family: "SF Pro Text";
     font-size: 27px;
     height: 60px;
     width: 60px;
-    margin: 5px 1px;
+    margin: 5px 2px 5px 15px;
     border-radius: 100%;
+}
+
+.boton:active {
+    background-color: #737373;
+    animation: clickAnimation 3s forwards;
+}
+
+@keyframes clickAnimation {
+    0% {
+        transform: scale(1); /* Estado inicial: sin cambio */
+    }
+    50% {
+        transform: scale(1); /* Estado intermedio: se agranda un poco */
+        background-color: #737373; /* Cambia el color temporalmente */
+    }
+    100% {
+        transform: scale(1); /* Vuelve al tamaño original */
+        background-color: #333333; /* Vuelve al color original */
+    }
+}
+
+.boton-otros{
+    border: none; 
+    box-shadow: none;
+    outline: none;
+    font-family: "SF Pro Text";
+    font-size: 27px;
+    height: 60px;
+    width: 60px;
+    margin: 5px 2px 5px 15px;
+    border-radius: 100%;
+}
+
+.boton-otros:active {
+    background-color: #d9d9d9;
 }
 
 .boton-op{
+    border: none; 
+    box-shadow: none;
+    outline: none;
     font-family: "SF Pro Text";
     font-size: 27px;
     height: 60px;
     width: 60px;
-    margin: 5px 1px;
+    margin: 5px 3px 5px 8px;
     border-radius: 100%;
     font-weight: bold;
+    position: relative;
+}
+
+.boton-op.active{
+    background-color: white;
+    color: #ff9f0a;
+    font: bold;
+    animation: selectAnimation 3s forwards;
+}
+
+@keyframes selectAnimation {
+    0% {
+        transform: scale(1); /* Estado inicial: sin cambio */
+    }
+    50% {
+        transform: scale(1); /* Estado intermedio: se agranda un poco */
+        background-color: white; /* Cambia el color temporalmente */
+        color: #ff9f0a;
+    }
+    100% {
+        transform: scale(1); /* Vuelve al tamaño original */
+        background-color: #ff9f0a; /* Vuelve al color original */
+        color: white;
+    }
 }
 
 .boton-cero{
+    border: none; 
+    box-shadow: none;
+    outline: none;
     font-family: "SF Pro Text";
     font-size: 27px;
     height: 60px;
-    width: 145px;
+    width: 140px;
+    margin-left: 15px;
+    margin-top: 5px;
     border-radius: 50px;
-    padding-left: 20px;
     text-align: left;
+}
+
+.boton-cero:active {
+    background-color: #737373;
 }
 
 .bg-gray{
@@ -91,8 +163,4 @@ html, body {
     color: white;
 }
 
-.operation{
-    background-color: white;
-    color: #ff9f0a;
-    font: bold;
-}
+
