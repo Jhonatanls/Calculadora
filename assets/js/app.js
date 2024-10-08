@@ -14,6 +14,7 @@ const inputValue = (numero) => {
         divPantalla.innerText = numero;
     } else {
         divPantalla.innerText += numero
+        
     }
 }
 
@@ -26,24 +27,24 @@ const limpiarPantalla = () => {
 const operaciones = (simbolo) => {
     operador = simbolo;
     if(valor1 === 0){
-        valor1 = parseFloat(divPantalla.value);
+        valor1 = parseFloat(divPantalla.innerText);
         divPantalla.innerText = 0;
     } else {
         switch (operador) {
 			case '+':
-				valor2 = divPantalla.value;
+				valor2 = divPantalla.innerText;
 				valor1 = parseFloat(valor1) + parseFloat(valor2);
 				break;
 			case '-':
-				valor2 = divPantalla.value;
+				valor2 = divPantalla.innerText;
 				valor1 = parseFloat(valor1) - parseFloat(valor2);
 				break;
 			case '/':
-				valor2 = divPantalla.value;
+				valor2 = divPantalla.innerText;
 				valor1 = parseFloat(valor1) / parseFloat(valor2);
 				break;
 			case '*':
-				valor2 = divPantalla.value;
+				valor2 = divPantalla.innerText;
 				valor1 = parseFloat(valor1) * parseFloat(valor2);
 				break;
 			default:
@@ -51,7 +52,7 @@ const operaciones = (simbolo) => {
 			break;
 			}
             divPantalla.innerText = valor1;
-			divPantalla.value = 0;
+			divPantalla.innerText = 0;
 			valor2 = 0;
     }
 }
@@ -59,19 +60,19 @@ const operaciones = (simbolo) => {
 const calcular = () => {
     switch (operador) {
     case '+':
-        resultado = valor1 + parseFloat(divPantalla.value);
+        resultado = valor1 + parseFloat(divPantalla.innerText);
         divPantalla.innerText = resultado;
         break;
     case '-':
-        resultado = valor1 - parseFloat(divPantalla.value);
+        resultado = valor1 - parseFloat(divPantalla.innerText);
         divPantalla.innerText= resultado;
         break;
     case '/':
-        resultado = valor1 / parseFloat(divPantalla.value);
+        resultado = valor1 / parseFloat(divPantalla.innerText);
         divPantalla.innerText = resultado;
         break;
     case '*':
-        resultado = valor1 * parseFloat(divPantalla.value);
+        resultado = valor1 * parseFloat(divPantalla.innerText);
         divPantalla.innerText = resultado;
         break;
     default:
@@ -88,7 +89,7 @@ const punto = () => {
 }
 
 const masMenos = () => {
-    if (divPantalla.value == "") {
+    if (divPantalla.innerText == "") {
         divPantalla.innerText= "-";
     } else {
         divPantalla.innerText = "";
@@ -96,7 +97,7 @@ const masMenos = () => {
 }
 
 const porcentaje = () => {
-    valor2 = parseFloat(divPantalla.value);
+    valor2 = parseFloat(divPantalla.innerText);
     if (operador == "*") {
         resultado = (valor1 / 100) * valor2;
     }
