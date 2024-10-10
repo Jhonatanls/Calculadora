@@ -49,6 +49,8 @@ La interfaz de la calculadora sigue un diseño minimalista similar al de iPhone:
 ```
 * Abre el archivo `index.html` en tu navegador web favorito para utilizar la calculadora.
 
+* Entra en este link de pages: https://jhonatanls.github.io/Calculadora/
+
 ## Estructura del proyecto
 * `index.html:` Página principal donde se encuentra el esqueleto de la computadora.
 
